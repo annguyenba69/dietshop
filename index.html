@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/reset.css">
+    <link rel="stylesheet" href="public/css/bootstrap-4.6.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/css/animate.css">
+    <link rel="stylesheet" href="public/font/css/all.css">
+    <link rel="stylesheet" href="public/style.css">
+    <script src="public/js/jquery.min.js"></script>
+    <script src="public/js/popper.min.2018.js"></script>
+    <script src="public/js/jquery.easing.js"></script>
+    <script src="public/js/gsap.js"></script>
+    <script src="public/main.js"></script>
+    <title>Project Diet Shop</title>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <div id="top-bar-left" class="d-flex">
+                        <div class="logo">
+                            <img src="public/images/logo.webp" alt="">
+                        </div>
+                        <nav>
+                            <ul class="main-menu d-flex">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="shop.html">Shop</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div id="top-bar-right" class="d-flex justify-content-end">
+                        <i class="far fa-user user"></i>
+                        <a href="wish-list.html"><i class="far fa-heart heart"> <span class="count">0</span></i></a>
+                        <a href="cart.html"> <i class="fas fa-shopping-cart cart"> <span class="count">0</span></i></a>
+                        <a href=""> <span class="money">$0.00</span></a>
+                        <i class="fas fa-search search"></i>
+                        <i class="fas fa-bars nav-toggle"></i>
+                    </div>
+                </div>
+                <div class="col-12 position-relative">
+                    <form action="" class="nav-search">
+                        <input type="text" name="" id="" placeholder="Enter your keyword">
+                        <i class="fas fa-times cancel-nav-search"></i>
+                    </form>
+                </div>
+                <div class="col-12">
+                    <div class="user-account">
+                        <div class="row">
+                            <div class="col-12 ml-1 d-flex justify-content-between">
+                                <p class="title-login">Login</p>
+                                <i class="fas fa-times cancel"></i>
+                            </div>
+                            <div class="col-12">
+                                <input type="text" name="username" id="username" placeholder="Username or Email">
+                            </div>
+                            <div class="col-12">
+                                <input type="text" name="password" id="password" placeholder="Password">
+                            </div>
+                            <div class="col-12 ml-1">
+                                <input type="checkbox" name="checkbox" id="checkbox">
+                                <label for="checkbox" id="label-remember">Remember Me</label>
+                            </div>
+                            <div class="col-12">
+                                <input type="submit" value="Login" id="button" class="btn btn-block">
+                            </div>
+                            <div class="col-12  text-center mt-2">
+                                <a href="" class="lost-pass">Lost Your Password ?</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <ul class="responsive-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Header -->
+    <div id="background">
+        <div class="container-fluid p-0">
+            <div class="row no-gutters">
+                <div class="col-md-6">
+                    <div class="background-left">
+                        <p class="background-title">Your diet can be tasty & healthy. Effortlessly</p>
+                        <img src="public/images/hinh tron.webp" alt="">
+                        <button class="background-button">View Diets</button>
+                        <p class="background-content">All diet's are gluten free</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="background-right">
+                        <img src="public/images/background.webp" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="background-bottom">
+                        <p>Quantum pertore<span>di allen</span> quento</p>
+                        <div class="block"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Background -->
+    <div id="wp-content">
+        <div id="list-product">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="list-product-title">Chef’s special meals</h2>
+                    </div>
+                </div>
+                <div class="row pb-5">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="product">
+                            <div class="product-img">
+                                <a href=""><img class="img-fluid" src="public/images/sp-1.webp" alt=""></a>
+                                <p class="discount">30%</p>
+                            </div>
+                            <div class="product-info">
+                                <a href="">
+                                    <h4>Brunch low-carb</h4>
+                                </a>
+                                <p class="product-price">$14.00-$28.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="product">
+                            <div class="product-img">
+                                <a href=""><img class="img-fluid" src="public/images/sp-2.webp" alt=""></a>
+                                <p class="discount">29%</p>
+                            </div>
+                            <div class="product-info">
+                                <a href="">
+                                    <h4>Lunch vegan box</h4>
+                                </a>
+                                <p class="product-price">$13.00-$22.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="product">
+                            <div class="product-img">
+                                <a href=""><img class="img-fluid" src="public/images/sp-3.webp" alt=""></a>
+                            </div>
+                            <div class="product-info">
+                                <a href="">
+                                    <h4>Dinner paleo box</h4>
+                                </a>
+                                <p class="product-price">$13.00-$22.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pb-5" id="block-more">
+                    <div class="col-md-12">
+                        <div class="product-more d-flex justify-content-center">
+                            <p>Browse and choose from all our meals</p>
+                            <button><a href="shop.html" class="text-decoration-none">See all meals</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End List Product -->
+        <div id="service">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="title">Our services are top quality <span>and we're doing our best for you happiness
+                                and
+                                health</span></h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <div class="service-item">
+                            <img src="public/images/phone.webp" alt="">
+                            <h4><span>1</span>. Select a diet that suits your needs</h4>
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum ecat.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="service-item">
+                            <img src="public/images/car.webp" alt="">
+                            <h4><span>2</span>. More than 10 years experience</h4>
+                            <p>Voluptate velit esse cillum dolore eu fugiat nulla pariatur. Exce pteur occaecat.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="service-item">
+                            <img src="public/images/bag.webp" alt="">
+                            <h4><span>3</span>. Enjoy good and healthy life</h4>
+                            <p>Aliqua. Ut enim ad minim veniam, quis exercitation ullaais.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Service -->
+        <div id="banner">
+            <div class="container">
+                <div class="row no-gutters">
+                    <div class="col-md-6">
+                        <div class="banner-left">
+                            <img class="img-fluid" src="public/images/people.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="banner-right">
+                            <h2>Our all dishes are both Delicious and Healthy</h2>
+                            <p>Voluptate velit esse cillum dolore eu fugiat nulla pariatur. Exce pteur sint occaecat
+                                cupidatat non proident, sunt in culpa qui quantum.</p>
+                            <img src="public/images/chuki.webp" alt="">
+                            <button>About us</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Banner -->
+        <div id="list-post">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="title"><span>Read our</span> recipes, and healthy life ideas</h2>
+                    </div>
+                </div>
+                <div class="row pb-5">
+                    <div class="col-md-4">
+                        <div class="post">
+                            <div class="post-img">
+                                <a href=""><img class="img-fluid" src="public/images/post-1.webp" alt=""></a>
+                                <a href=""><i class="far fa-heart post-heart"></i></a>
+                                <a href=""><i class="fab fa-facebook post-facebook"></i></a>
+                            </div>
+                            <div class="post-des">
+                                <a href="">
+                                    <p>Suspendisse eget leo ac turpis egestas. Suspendisse justo augue</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="post">
+                            <div class="post-img">
+                                <a href=""><img class="img-fluid" src="public/images/post-2.webp" alt=""></a>
+                                <a href=""><i class="far fa-heart post-heart"></i></a>
+                                <a href=""><i class="fab fa-facebook post-facebook"></i></a>
+                            </div>
+                            <div class="post-des">
+                                <a href="">
+                                    <p>Etiam semper, quam nibh ut aliquet feugiat dui, porta sit amet erat</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="post">
+                            <div class="post-img">
+                                <a href=""><img class="img-fluid" src="public/images/post-3.webp" alt=""></a>
+                                <a href=""><i class="far fa-heart post-heart"></i></a>
+                                <a href=""><i class="fab fa-facebook post-facebook"></i></a>
+                            </div>
+                            <div class="post-des">
+                                <a href="">
+                                    <p>Aenean congue ac, vulputate tempus ipsum. Nam dictum sit amet, nibh</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pb-5" id="block-more">
+                    <div class="col-md-12">
+                        <div class="list-post-more product-more d-flex justify-content-center">
+                            <p>Browse and choose from all our meals</p>
+                            <button><a href="blog.html" class="text-decoration-none">See all meals</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End List Product -->
+        <div id="more-info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="more-info-item">
+                            <div class="item-img d-flex">
+                                <img src="public/images/more-info-1.webp" alt="">
+                                <p>Sed do eiusmod tempor incididunt ut labore</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="more-info-item">
+                            <div class="item-img d-flex">
+                                <img src="public/images/more-info-2.webp" alt="">
+                                <p>Duis aute irure dolor in reprehen a voluptate</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="more-info-item">
+                            <div class="item-img d-flex">
+                                <img src="public/images/more-info-3.webp" alt="">
+                                <p>Lorem ipsum dolor sit amet, consectetur</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="more-info-item">
+                            <div class="item-img d-flex">
+                                <img src="public/images/more-info-4.webp" alt="">
+                                <p>Et dolore magna aliqua a enim ad minim veniam</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="more-info-item">
+                            <div class="item-img d-flex">
+                                <img src="public/images/more-info-5.webp" alt="">
+                                <p>Exercitation ullamco laboris nisi ut aliquip</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="more-info-item">
+                            <div class="item-img d-flex">
+                                <img src="public/images/more-info-6.webp" alt="">
+                                <p>Voluptate velit esse cillum dolore eu fugiat nulla</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End More Info -->
+    </div>
+    <!-- End Wrapper Content -->
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="box-left">
+                        <h4 class="footer-title">Contact with us</h4>
+                        <p>Nullam viverra consectetuer quisque cursus et, porttitor risus.</p>
+                        <div class="box-left-link">
+                            <a href="">+61 (0) 3 8376 6284</a>
+                            <a href="">noreply@envato.com</a>
+                        </div>
+                        <h4 class="footer-title">Localization</h4>
+                        <div class="box-left-location">
+                            <p>Envato</p>
+                            <p>Level 13, 2 Elizabeth</p>
+                            <p>Victoria 3000</p>
+                            <p>Australia</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="box-center">
+                        <h4 class="footer-title">Useful links</h4>
+                        <a href="">Contact us</a>
+                        <a href="">Help & About us</a>
+                        <a href="">Shipping & Returns</a>
+                        <a href="">Refund Policy</a>
+                        <a href="">Press Room</a>
+                        <a href="">Privacy Policy</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="box-right">
+                        <h4 class="footer-title">BE informed with our newsletter</h4>
+                        <input type="text" name="email" id="footer-input" placeholder="Email">
+                        <button>Subscribe</button>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+                        <span>We accept:</span> <img src="public/images/pay.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

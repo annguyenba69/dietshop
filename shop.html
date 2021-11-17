@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/reset.css">
+    <link rel="stylesheet" href="public/css/bootstrap-4.6.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/css/animate.css">
+    <link rel="stylesheet" href="public/font/css/all.css">
+    <link rel="stylesheet" href="public/style.css">
+    <script src="public/js/jquery.min.js"></script>
+    <script src="public/js/popper.min.2018.js"></script>
+    <script src="public/css/bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+    <script src="public/js/jquery.easing.js"></script>
+    <script src="public/js/gsap.js"></script>
+    <script src="public/main.js"></script>
+    <title>Project Diet Shop</title>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <div id="top-bar-left" class="d-flex">
+                        <div class="logo">
+                            <img src="public/images/logo.webp" alt="">
+                        </div>
+                        <nav>
+                            <ul class="main-menu d-flex">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="shop.html">Shop</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div id="top-bar-right" class="d-flex justify-content-end">
+                        <i class="far fa-user user"></i>
+                        <a href="wish-list.html"><i class="far fa-heart heart"> <span class="count">0</span></i></a>
+                        <a href="cart.html"> <i class="fas fa-shopping-cart cart"> <span class="count">0</span></i></a>
+                        <a href=""> <span class="money">$0.00</span></a>
+                        <i class="fas fa-search search"></i>
+                        <i class="fas fa-bars nav-toggle"></i>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <form action="" class="nav-search">
+                        <input type="text" name="" id="" placeholder="Enter your keyword">
+                        <i class="fas fa-times cancel-nav-search"></i>
+                    </form>
+                </div>
+                <div class="col-12">
+                    <div class="user-account">
+                        <div class="row">
+                            <div class="col-12 ml-1 d-flex justify-content-between">
+                                <p class="title-login">Login</p>
+                                <i class="fas fa-times cancel"></i>
+                            </div>
+                            <div class="col-12">
+                                <input type="text" name="username" id="username" placeholder="Username or Email">
+                            </div>
+                            <div class="col-12">
+                                <input type="text" name="password" id="password" placeholder="Password">
+                            </div>
+                            <div class="col-12 ml-1">
+                                <input type="checkbox" name="checkbox" id="checkbox">
+                                <label for="checkbox" id="label-remember">Remember Me</label>
+                            </div>
+                            <div class="col-12">
+                                <input type="submit" value="Login" id="button" class="btn btn-block">
+                            </div>
+                            <div class="col-12  text-center mt-2">
+                                <a href="" class="lost-pass">Lost Your Password ?</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <ul class="responsive-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Header -->
+    <div id="background-shop">
+        <div class="container-fluid p-0">
+            <div class="row">
+                <div class="col-md-12">
+                    <img class="w-100" src="public/images/background-2.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Background -->
+    <div id="wp-content-shop">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div id="side-bar-left">
+                        <ul class="main-menu">
+                            <li><a href="">Breakfast</a>
+                                <ul class="sub-menu">
+                                    <li><a href="">Salad</a></li>
+                                    <li><a href="">Sandwich</a></li>
+                                </ul>
+                                <i class="fas fa-angle-down angle"></i>
+                            </li>
+                            <li><a href="">Brunch</a>
+                                <ul class="sub-menu">
+                                    <li><a href="">Fruits</a></li>
+                                </ul>
+                                <i class="fas fa-angle-down angle"></i>
+                            </li>
+                            <li><a href="">Dinner</a>
+                                <ul class="sub-menu">
+                                    <li><a href="">Meal</a></li>
+                                    <li><a href="">Soup</a></li>
+                                </ul>
+                                <i class="fas fa-angle-down angle"></i>
+                            </li>
+                            <li><a href="">Gluten free</a></li>
+                            <li><a href="">Lunch</a>
+                                <ul class="sub-menu">
+                                    <li><a href="">Fruits and additions</a></li>
+                                    <li><a href="">Vegetables</a></li>
+                                </ul>
+                                <i class="fas fa-angle-down angle"></i>
+                            </li>
+                        </ul>
+                        <div class="filter">
+                            <h5>Filter by attributes</h5>
+                            <p class="ammount">Ammount</p>
+                            <div class="filter-detail">
+                                <a href="" data-toggle="tooltip" title="100g" data-placement="top"><span>100g</span></a>
+                                <a href="" data-toggle="tooltip" title="150g" data-placement="top"><span>150g</span></a>
+                                <a href="" data-toggle="tooltip" title="200g" data-placement="top"><span>200g</span></a>
+                                <a href="" data-toggle="tooltip" title="250g" data-placement="top"><span>250g</span></a>
+                            </div>
+                            <p class="meal-type">Meal type</p>
+                            <div class="filter-detail">
+                                <a href="" data-toggle="tooltip" title="Low-Carb"
+                                    data-placement="top"><span>Low-Carb</span></a>
+                                <a href="" data-toggle="tooltip" title="Paleo"
+                                    data-placement="top"><span>Paleo</span></a>
+                                <a href="" data-toggle="tooltip" title="Vegan"
+                                    data-placement="top"><span>Vegan</span></a>
+                                <a href="" data-toggle="tooltip" title="Vegetarian"
+                                    data-placement="top"><span>Vegetarian</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div id="list-product">
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <p class="showing">Showing all 9 results</p>
+                            </div>
+                            <div class="col-md-6 text-right">
+                                <form action="">
+                                    <select name="" id="sort">
+                                        <option value="menu_order" selected="selected">Default sorting</option>
+                                        <option value="popularity">Sort by popularity</option>
+                                        <option value="rating">Sort by average rating</option>
+                                        <option value="date">Sort by latest</option>
+                                        <option value="price">Sort by price: low to high</option>
+                                        <option value="price-desc">Sort by price: high to low</option>
+                                    </select>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 col-sm-6">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href=""><img class="img-fluid" src="public/images/sp-1.webp" alt=""></a>
+                                        <p class="discount">-13%</p>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="">
+                                            <h4>Breakfast paleo box</h4>
+                                        </a>
+                                        <p class="product-price">$13.10 – $21.10</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href=""><img class="img-fluid" src="public/images/sp-2.webp" alt=""></a>
+                                        <p class="discount">-9%</p>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="">
+                                            <h4>Breakfast vege box</h4>
+                                        </a>
+                                        <p class="product-price">$15.00 – $25.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href=""><img class="img-fluid" src="public/images/sp-3.webp" alt=""></a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="">
+                                            <h4>Brunch low-carb box</h4>
+                                        </a>
+                                        <p class="product-price">$14.00 – $28.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href=""><img class="img-fluid" src="public/images/sp-4.webp" alt=""></a>
+                                        <p class="discount">-5%</p>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="">
+                                            <h4>Brunch vegan box</h4>
+                                        </a>
+                                        <p class="product-price">$13.00 – $22.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href=""><img class="img-fluid" src="public/images/sp-5.webp" alt=""></a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="">
+                                            <h4>Dinner low-carb box</h4>
+                                        </a>
+                                        <p class="product-price">$23.99 – $28.99</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href=""><img class="img-fluid" src="public/images/sp-6.webp" alt=""></a>
+                                        <p class="discount">-7%</p>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="">
+                                            <h4>Dinner paleo box</h4>
+                                        </a>
+                                        <p class="product-price">$13.00 – $22.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 more-product">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href=""><img class="img-fluid" src="public/images/sp-7.webp" alt=""></a>
+                                        <p class="discount">-23%</p>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="">
+                                            <h4>Lunch paleo box</h4>
+                                        </a>
+                                        <p class="product-price">$12.30 – $22.80</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 more-product">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href=""><img class="img-fluid" src="public/images/sp-8.webp" alt=""></a>
+                                        <p class="discount">-23%</p>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="">
+                                            <h4>Lunch vegan box</h4>
+                                        </a>
+                                        <p class="product-price">$13.00 – $22.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 more-product">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <a href=""><img class="img-fluid" src="public/images/sp-9.webp" alt=""></a>
+                                        <p class="discount">-23%</p>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="">
+                                            <h4>Lunch vege box</h4>
+                                        </a>
+                                        <p class="product-price">$15.00 – $25.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 text-center mb-3">
+                                <button class="btn button-more"
+                                    style="background-color: #007bff; color: #ffffff;">More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="box-left">
+                        <h4 class="footer-title">Contact with us</h4>
+                        <p>Nullam viverra consectetuer quisque cursus et, porttitor risus.</p>
+                        <div class="box-left-link">
+                            <a href="">+61 (0) 3 8376 6284</a>
+                            <a href="">noreply@envato.com</a>
+                        </div>
+                        <h4 class="footer-title">Localization</h4>
+                        <div class="box-left-location">
+                            <p>Envato</p>
+                            <p>Level 13, 2 Elizabeth</p>
+                            <p>Victoria 3000</p>
+                            <p>Australia</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="box-center">
+                        <h4 class="footer-title">Useful links</h4>
+                        <a href="">Contact us</a>
+                        <a href="">Help & About us</a>
+                        <a href="">Shipping & Returns</a>
+                        <a href="">Refund Policy</a>
+                        <a href="">Press Room</a>
+                        <a href="">Privacy Policy</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="box-right">
+                        <h4 class="footer-title">BE informed with our newsletter</h4>
+                        <input type="text" name="email" id="footer-input">
+                        <button>Subscribe</button>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+                        <span>We accept:</span> <img src="public/images/pay.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/reset.css">
+    <link rel="stylesheet" href="public/css/bootstrap-4.6.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/css/animate.css">
+    <link rel="stylesheet" href="public/font/css/all.css">
+    <link rel="stylesheet" href="public/style.css">
+    <script src="public/js/jquery.min.js"></script>
+    <script src="public/js/popper.min.2018.js"></script>
+    <script src="public/css/bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+    <script src="public/js/jquery.easing.js"></script>
+    <script src="public/js/gsap.js"></script>
+    <script src="public/main.js"></script>
+    <title>Project Diet Shop</title>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <div id="top-bar-left" class="d-flex">
+                        <div class="logo">
+                            <img src="public/images/logo.webp" alt="">
+                        </div>
+                        <nav>
+                            <ul class="main-menu d-flex">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="shop.html">Shop</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div id="top-bar-right" class="d-flex justify-content-end">
+                        <i class="far fa-user user"></i>
+                        <a href="wish-list.html"><i class="far fa-heart heart"> <span class="count">0</span></i></a>
+                        <a href="cart.html"> <i class="fas fa-shopping-cart cart"> <span class="count">0</span></i></a>
+                        <a href=""> <span class="money">$0.00</span></a>
+                        <i class="fas fa-search search"></i>
+                        <i class="fas fa-bars nav-toggle"></i>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <form action="" class="nav-search">
+                        <input type="text" name="" id="" placeholder="Enter your keyword">
+                        <i class="fas fa-times cancel-nav-search"></i>
+                    </form>
+                </div>
+                <div class="col-12">
+                    <div class="user-account">
+                        <div class="row">
+                            <div class="col-12 ml-1 d-flex justify-content-between">
+                                <p class="title-login">Login</p>
+                                <i class="fas fa-times cancel"></i>
+                            </div>
+                            <div class="col-12">
+                                <input type="text" name="username" id="username" placeholder="Username or Email">
+                            </div>
+                            <div class="col-12">
+                                <input type="text" name="password" id="password" placeholder="Password">
+                            </div>
+                            <div class="col-12 ml-1">
+                                <input type="checkbox" name="checkbox" id="checkbox">
+                                <label for="checkbox" id="label-remember">Remember Me</label>
+                            </div>
+                            <div class="col-12">
+                                <input type="submit" value="Login" id="button" class="btn btn-block">
+                            </div>
+                            <div class="col-12  text-center mt-2">
+                                <a href="" class="lost-pass">Lost Your Password ?</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <ul class="responsive-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Header -->
+    <div id="background-shop">
+        <div class="container-fluid p-0">
+            <div class="row">
+                <div class="col-md-12">
+                    <img class="w-100"
+                        src="https://suckhoedoisong.qltns.mediacdn.vn/324455921873985536/2021/8/10/1-16286119551351320735821.jpg"
+                        alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Background -->
+    <div id="wp-content-blog">
+        <div id="list-post">
+            <div class="container">
+                <div class="row pb-5">
+                    <div class="col-md-6">
+                        <div class="post">
+                            <div class="post-img">
+                                <a href=""><img class="img-fluid" src="public/images/post-1.webp" alt=""></a>
+                                <a href=""><i class="far fa-heart post-heart"></i></a>
+                                <a href=""><i class="fab fa-facebook post-facebook"></i></a>
+                            </div>
+                            <div class="post-des">
+                                <a href="">
+                                    <p>Suspendisse eget leo ac turpis egestas. Suspendisse justo augue
+                                    </p>
+                                </a>
+                                <p class="post-des-small">Fusce iaculis mi. Suspendisse luctus et magnis dis parturient
+                                    montes, nascetur ridiculus mus.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="post">
+                            <div class="post-img">
+                                <a href=""><img class="img-fluid" src="public/images/post-2.webp" alt=""></a>
+                                <a href=""><i class="far fa-heart post-heart"></i></a>
+                                <a href=""><i class="fab fa-facebook post-facebook"></i></a>
+                            </div>
+                            <div class="post-des">
+                                <a href="">
+                                    <p>Etiam semper, quam nibh ut aliquet feugiat dui, porta sit amet erat
+                                    </p>
+                                </a>
+                                <p class="post-des-small">Nam dui aliquam iaculis et, justo. Sed vehicula lectus.
+                                    Vestibulum tempus. Morbi fermentum sed, aliquet vulputate, odio et orci sit amet
+                                    magna.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="post">
+                            <div class="post-img">
+                                <a href=""><img class="img-fluid" src="public/images/post-3.webp" alt=""></a>
+                                <a href=""><i class="far fa-heart post-heart"></i></a>
+                                <a href=""><i class="fab fa-facebook post-facebook"></i></a>
+                            </div>
+                            <div class="post-des">
+                                <a href="">
+                                    <p>Aenean congue ac, vulputate tempus ipsum. Nam dictum sit amet, nibh
+                                    </p>
+                                </a>
+                                <p class="post-des-small">Praesent gravida sagittis. Aliquam bibendum, sem ac eros
+                                    viverra ligula. Nunc elementum.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="post">
+                            <div class="post-img">
+                                <a href=""><img class="img-fluid" src="public/images/post-4.webp" alt=""></a>
+                                <a href=""><i class="far fa-heart post-heart"></i></a>
+                                <a href=""><i class="fab fa-facebook post-facebook"></i></a>
+                            </div>
+                            <div class="post-des">
+                                <a href="">
+                                    <p>Phasellus facilisis faucibus orci luctus et libero. Aliquam sem. In quam at
+                                        bibendum porttitor
+                                    </p>
+                                </a>
+                                <p class="post-des-small">Nam pellentesque erat velit nulla sed nulla dictum faucibus
+                                    tempor, dolor dictum vitae, cursus justo nibh placerat</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="post">
+                            <div class="post-img">
+                                <a href=""><img class="img-fluid" src="public/images/post-5.webp" alt=""></a>
+                                <a href=""><i class="far fa-heart post-heart"></i></a>
+                                <a href=""><i class="fab fa-facebook post-facebook"></i></a>
+                            </div>
+                            <div class="post-des">
+                                <a href="">
+                                    <p>Aliquam quis neque. In molestie egestas, justo a nisl. Sed fringilla ipsum enim,
+                                        id mauris tincidunt vehicula</p>
+                                </a>
+                                <p class="post-des-small">Faucibus et, ultricies vehicula, dui vitae wisi nibh, pretium
+                                    vehicula erat. ultricies vehicula,</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="post">
+                            <div class="post-img">
+                                <a href=""><img class="img-fluid" src="public/images/post-6.webp" alt=""></a>
+                                <a href=""><i class="far fa-heart post-heart"></i></a>
+                                <a href=""><i class="fab fa-facebook post-facebook"></i></a>
+                            </div>
+                            <div class="post-des">
+                                <a href="">
+                                    <p>Maecenas blandit eu, elit. Quisque quis nibh. Maecenas pellentesque at, suscipit
+                                        id, adipiscing quam ante nec eros</p>
+                                </a>
+                                <p class="post-des-small">In pretium erat ornare arcu luctus arcu vitae tellus. Praesent
+                                    vitae libero. Curabitur fringilla id, commodo wisi.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="box-left">
+                        <h4 class="footer-title">Contact with us</h4>
+                        <p>Nullam viverra consectetuer quisque cursus et, porttitor risus.</p>
+                        <div class="box-left-link">
+                            <a href="">+61 (0) 3 8376 6284</a>
+                            <a href="">noreply@envato.com</a>
+                        </div>
+                        <h4 class="footer-title">Localization</h4>
+                        <div class="box-left-location">
+                            <p>Envato</p>
+                            <p>Level 13, 2 Elizabeth</p>
+                            <p>Victoria 3000</p>
+                            <p>Australia</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="box-center">
+                        <h4 class="footer-title">Useful links</h4>
+                        <a href="">Contact us</a>
+                        <a href="">Help & About us</a>
+                        <a href="">Shipping & Returns</a>
+                        <a href="">Refund Policy</a>
+                        <a href="">Press Room</a>
+                        <a href="">Privacy Policy</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="box-right">
+                        <h4 class="footer-title">BE informed with our newsletter</h4>
+                        <input type="text" name="email" id="footer-input">
+                        <button>Subscribe</button>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+                        <span>We accept:</span> <img src="public/images/pay.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
